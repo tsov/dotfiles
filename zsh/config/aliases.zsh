@@ -1,0 +1,18 @@
+alias reload-zsh="source ~/.zshrc"
+alias sc="systemctl"
+
+# Function for spin services
+spin-service() {
+    if [[ $1 == "list" ]]
+    then
+        systemctl list-units "proc*"
+    elif [[ $1 == "start" ]]
+    then
+        systemctl start proc-shopify--$2@server.service
+    elif [[ $1 == "stop" ]]
+    then
+        systemctl stop proc-shopify--$2@server.service
+    else
+        echo "$1 is not supported"
+    fi
+}
