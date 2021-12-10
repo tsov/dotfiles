@@ -8,7 +8,7 @@ ln -sfn ~/dotfiles/zsh ~/.zsh
 ln -sf ~/dotfiles/zsh/zshrc ~/.zshrc
 
 # Install custom ZSH plugins
-source ~/.zsh/install.sh
+source ~/.zsh/install.zsh
 
 # Custom bin folder
 ln -sfn ~/dotfiles/bin ~/.bin
