@@ -1,7 +1,3 @@
-alias reload-zsh="source ~/.zshrc"
-alias sc="systemctl"
-
-# Function for spin services
 spin-service() {
     if [[ $1 == "list" ]]
     then

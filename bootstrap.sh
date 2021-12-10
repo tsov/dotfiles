@@ -6,9 +6,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 # ZSH
 ln -sfn ~/dotfiles/zsh ~/.zsh
 ln -sf ~/dotfiles/zsh/zshrc ~/.zshrc
-
-# Install custom ZSH plugins
-source ~/.zsh/install.zsh
+source ~/.zsh/install-plugins.zsh
 
 # Custom bin folder
 ln -sfn ~/dotfiles/bin ~/.bin
