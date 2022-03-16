@@ -24,6 +24,15 @@ source $ZSH/oh-my-zsh.sh
 export MANPATH="/usr/local/man:$MANPATH"
 export LANG=en_US.UTF-8
 
+# === SPIN specific
+
+# --- Include custom bin folder
+
+if [[ $SPIN == '1' ]]
+then
+    export PATH=$HOME/.bin:$PATH
+fi
+
 # --- Extensions
 
 if [[ $SPIN == '1' ]]

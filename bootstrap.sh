@@ -10,7 +10,6 @@ source ~/.zsh/install-plugins.zsh
 
 # Custom bin folder
 ln -sfn ~/dotfiles/bin ~/.bin
-export PATH=$HOME/.bin:$PATH
 
 # Reloads zshrc
 source ~/.zshrc
